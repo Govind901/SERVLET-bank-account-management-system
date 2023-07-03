@@ -1,0 +1,70 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <listener>
+  	<listener-class>connection.Listnerr</listener-class>
+  </listener>
+  <servlet>
+  	<servlet-name>AccCreation</servlet-name>
+  	<display-name>AccCreation</display-name>
+  	<description></description>
+  	<servlet-class>servlet.AccCreation</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AccBalance</servlet-name>
+  	<display-name>AccBalance</display-name>
+  	<description></description>
+  	<servlet-class>servlet.AccBalance</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AccDeposit</servlet-name>
+  	<display-name>AccDeposit</display-name>
+  	<description></description>
+  	<servlet-class>servlet.AccDeposit</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AccWithdraw</servlet-name>
+  	<display-name>AccWithdraw</display-name>
+  	<description></description>
+  	<servlet-class>servlet.AccWithdraw</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AccTransfer</servlet-name>
+  	<display-name>AccTransfer</display-name>
+  	<description></description>
+  	<servlet-class>servlet.AccTransfer</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AccTransHistory</servlet-name>
+  	<display-name>AccTransHistory</display-name>
+  	<description></description>
+  	<servlet-class>servlet.AccTransHistory</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AccCreation</servlet-name>
+  	<url-pattern>/Accounts/create</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AccBalance</servlet-name>
+  	<url-pattern>/accounts/{account_id}/balance</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AccDeposit</servlet-name>
+  	<url-pattern>/AccDeposit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AccWithdraw</servlet-name>
+  	<url-pattern>/AccWithdraw</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AccTransfer</servlet-name>
+  	<url-pattern>/accounts/{account_id}/transfer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AccTransHistory</servlet-name>
+  	<url-pattern>/accounts/{account_id}/transactions</url-pattern>
+  </servlet-mapping>
+</web-app>
